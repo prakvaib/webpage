@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dollar Rows | Home & Kitchen Deals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">EVERYDAY VALUE • GREAT FINDS • EASY SHOPPING</div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Dollar Rows home">
+      <span>DOLLAR<span class="percent">%</span>ROWS</span>
+      <small>MORE GOODS. MORE SAVINGS.</small>
+    </a>
+    <div class="header-tools">
+      <div class="utility-links">
+        <a href="#deals">Today's Deals</a><a href="#brands">Our Brands</a>
+        <a href="#help">Help</a><a href="#account">My Account</a>
+      </div>
+      <form class="search" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products">
+        <button type="submit" aria-label="Search">⌕</button>
+      </form>
+      <button class="cart" id="cartButton" type="button">♡ <span>Cart</span> <b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Main navigation">
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ <span>Menu</span></button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#kitchen">Kitchen & Dining</a>
+      <a href="#homeware">Home Essentials</a><a href="#stationery">Stationery</a>
+      <a href="#beauty">Beauty</a><a href="#party">Party Supplies</a>
+      <a href="#toys">Toys & Games</a><a href="#deals">Deals</a>
+    </div>
+  </nav>
+
+  <main id="home">
+    <section class="hero" aria-label="Featured offers">
+      <div class="hero-copy">
+        <p class="eyebrow" id="heroEyebrow">LOTS AND LOTS OF</p>
+        <h1 id="heroTitle">KITCHEN</h1>
+        <p class="script-word" id="heroSub">Essentials</p>
+        <a class="hero-cta" href="#kitchen">SHOP NOW <span>→</span></a>
+      </div>
+      <div class="hero-art" id="heroArt" aria-hidden="true">
+        <div class="bowl bowl-back"></div><div class="bowl bowl-front"></div>
+        <div class="mug mug-one"></div><div class="mug mug-two"></div>
+        <div class="towel"></div>
+      </div>
+      <button class="slide-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
+      <button class="slide-arrow next" id="nextSlide" aria-label="Next slide">›</button>
+      <div class="slide-dots" id="slideDots" aria-label="Choose slide"></div>
+    </section>
+
+    <section class="promo-strip" id="deals">
+      <div><span>SMART SHOPPING</span><strong>EVERYDAY LOW PRICES</strong></div>
+      <div><span>FIND YOUR FAVOURITES</span><strong>GREAT VALUE EVERY DAY</strong></div>
+      <div><span>NEW FINDS, BIG SAVINGS</span><strong>SHOP THE LATEST DEALS</strong></div>
+    </section>
+
+    <section class="product-section" id="kitchen">
+      <div class="section-heading">
+        <div><p class="section-kicker">DISCOVER MORE</p><h2>Save even more</h2></div>
+        <a href="#products">VIEW ALL PRODUCTS →</a>
+      </div>
+      <div class="product-grid" id="products">
+        <article class="product-card" data-name="weekly offers kitchen deals">
+          <div class="product-image offer-art"><span>THIS WEEK'S</span><b>HOT DEALS</b><i>NEW OFFERS<br>JUST FOR YOU</i></div>
+          <div class="product-info"><small>WEEKLY SPECIALS</small><h3>Current Ad</h3><p>See what's on offer this week.</p><button class="outline-btn" data-add="Current Ad">Explore deals</button></div>
+        </article>
+        <article class="product-card" data-name="storage jar kitchen food container">
+          <div class="product-image jar-art"><div class="jar-lid"></div><div class="jar-body"><span>GOOD<br>THINGS</span></div></div>
+          <div class="product-info"><small>KITCHEN STORAGE</small><h3>Storage Jar</h3><p>Keep everyday essentials handy.</p><button class="outline-btn" data-add="Storage Jar">Add to cart</button></div>
+        </article>
+        <article class="product-card" data-name="colourful kitchen utensils cooking tools">
+          <div class="product-image utensils-art"><i></i><i></i><i></i><i></i></div>
+          <div class="product-info"><small>COOKING TOOLS</small><h3>Kitchen Utensils</h3><p>Bright helpers for your kitchen.</p><button class="outline-btn" data-add="Kitchen Utensils">Add to cart</button></div>
+        </article>
+        <article class="product-card" data-name="home essentials bowls dining">
+          <div class="product-image bowls-art"><div></div><div></div><div></div></div>
+          <div class="product-info"><small>DINING ESSENTIALS</small><h3>Everyday Bowls</h3><p>Simple pieces for every meal.</p><button class="outline-btn" data-add="Everyday Bowls">Add to cart</button></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No products found. Try another search.</p>
+    </section>
+
+    <section class="brand-banner" id="brands">
+      <div><p>GOOD FINDS. GREAT PRICES.</p><h2>Save on brands you love</h2></div>
+      <a href="#products">SHOP COLLECTIONS →</a>
+    </section>
+  </main>
+
+  <footer id="help"><span class="footer-brand">DOLLAR<span>%</span>ROWS</span><p>Everyday finds for every home.</p><small>© 2026 Dollar Rows Demo Store</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
